@@ -8,136 +8,126 @@
     height: 100px;
     background-color: rgb(247, 249, 250);
     align-items: center;
-    position: sticky;
     font-family: monospace;
     font-size: x-large;
+    position: sticky;
     top: 0;
-  
+    z-index: 1;
     opacity: 0.8;
-}
 
-.navbar .nav{
+}
+.navbarul{
     display: flex;
-    margin-left: 400px;
-    
-    
-
-}
-.nav .nav1{
-    margin: 12px;
-    padding: 12px;
+    margin-left: 500px;
     list-style: none;
+}
+.nav.nav1{
+    margin: 10px;
+    
     
 }
-.nav .nav1 a{
+.navbarullia{
+    display: block;
     color: black;
-    text-decoration: none;
-
-}
-.nav .nav1 a:hover{
-    color: rgba(11, 10, 10, 0.993);
-    text-decoration: none;
-    background-color:white;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 15px;
-
-}
-.navbar .login a{
-
-    color: rgb(33, 33, 35);
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 5px;
+    padding: 10px12px;
     cursor: pointer;
-
-}
-.navbar .login a:hover{
-
-    color: blue;
-    background-color: white;
     border-radius: 15px;
-    padding: 5px;
+    text-decoration: none;
+    
+}
+.navbarullia:hover{
+    display: block;
+    color:rgb(40, 36, 36);
+    background-color: rgba(251, 243, 243, 0.709);
+    padding: 10px12px;
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 15px;
+    
+}
+.navbar.logo{
 
+    font-family: monospace;
+    font-size: 18px ;
+    margin: 10px;
 
 }
 .home{
     background-image: url("https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/01/Indonesian-landscape-with-female-traveler.jpg");
     width: 100%;
     height: 700px;
+    display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     justify-content: center;
     align-items: center;
+    position: relative;
+
     
+}
+.home::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.8;
+}
    
-}
-.home .form{
-    width: 25%;
-    height: 50px;
-    border: 2px solid black;
-    background-color: white;
-    margin: 250px 500px;
    
 
-}
-.places{
-    
-   background:linear-gradient(45deg , rgb(157, 241, 163) 0% , rgb(242, 229, 201) 10%, rgb(200, 200, 106) 20%, rgb(245, 248, 245) 30%, rgb(241, 209, 209) 40%, rgb(203, 203, 223) 50%, rgb(183, 183, 231) 60% , rgb(225, 225, 189) 70%) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    background-color: rgb(232, 229, 165);
-    color: rgb(7, 6, 6);
-}
-.places-text{
-    
-    text-align: center;
-    justify-content: center;
-}
-.cards{
-    margin: 30px;
-    display: grid;
-    
-    grid-template-columns: repeat(4,250px);
-    grid-gap: 60px;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    
-}
+#h1{
 
-.card{
-    
-    box-shadow: 5px 5px 10px 0 rgba(10, 10, 8, 0.956);
-    border-radius: 15px;
-    width: 260px;
-    height: 400px;
-    background-color: rgb(223, 199, 140);
-    letter-spacing: 2px;
-    line-height: 30px;
-}
-.cards .card .zoom-img .img-card img{
-    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
-    border-radius: 15px;
-    width: 260px;
-    height: 200px;
-}
-
-.cards .card .text .card-box a{
-    background-color: rgb(244, 210, 57);
-    color: black;
-    cursor: pointer;
+    display: block;
     text-decoration: none;
-    border: black 3px solid;
-    border-radius: 15px;
-    padding: 5px 40px;
-    
-    
+    font-family: monospace;
+    font-size: 40px;
+    color: crimson;
+    height: 80px;
+    width: 370px;
+    padding: 20px;
+    margin-left: 160px;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    opacity: 0.8;
    
 }
+#h1a{
+    text-decoration: none;
+    color: rgb(201, 34, 34);
+   
+}
+#h1:hover{
+    font-family: monospace;
+    text-decoration: none;
+    font-size: 40px;
+    color: crimson;
+    height: 80px;
+    width: 370px;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgb(173, 164, 151);
+    border-radius: 16px;
+    opacity: 0.8;
+   
+}
+
+#but{
+    background-color: rgb(155, 113, 8);
+    border-radius: 10%;
+    padding: 10px20px;
+    margin: 24px;
+
+    
+}
+
 .about{
     background-color: rgb(231, 203, 166);
     display: flex;
@@ -145,13 +135,13 @@
     justify-content: center;
     padding: 150px;
 }
-.about-img img {
+.about-imgimg {
     width: 500px;
     height: 700px;
-    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+    box-shadow: 2px2px6px0rgba(0, 0, 0, 0.3);
     margin: 30px;
   }
-.about .about-text {
+.about.about-text {
     margin: 20px;
     
 }  
@@ -159,20 +149,20 @@
     display: flex;
     background-color: rgb(228, 237, 245);
 }
-.services .service-item{
+.services.service-item{
     width: 200px;
     height: 200px;
     margin: 40px;
-    border: rgb(255, 251, 251) 2px solid;
-    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+    border: rgb(255, 251, 251) 2pxsolid;
 }
-.services .service-item img{
-    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+.services.service-itemimg{
+    
     width: 200px;
     height: 100px;
     margin-bottom: 40px;
 }
-.contact header{
+
+.contactheader{
     background:url("https://foodplazza113837442.files.wordpress.com/2022/11/contact-us-booking-flight-ticket-air-travel-vacations-concep-contact-us-booking-flight-ticket-air-travel-vacations-concept-104186601.jpg");
     background-repeat: no-repeat;
     height: 200px;
@@ -181,18 +171,19 @@
     text-align: center;
     justify-content: center;
 }
-.contact .contact-box{
+.contact.contact-box{
     background-color: rgb(206, 192, 192);
     display: flex;
     
     
 }
 
-.contact .contact-box .box{
+.contact.contact-box.box{
     width: 400px;
     height: 400px;
     margin: 40px;
 }
+
 /*===============Footer===================*/
 .footer {
     background-color: rgb(12, 9, 9);
@@ -203,7 +194,7 @@
     height: 670px;
     position: relative;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: rowwrap;
     justify-content: center;
     align-items: center;
   }
@@ -219,7 +210,7 @@
     right: 0;
   }
   
-  .footer .links {
+  .footer.links {
     position: relative;
     color: #fff;
     flex: 1;
@@ -229,25 +220,23 @@
     align-items: center;
   }
   
-  .links ul {
+  .linksul {
     list-style-type: none;
   }
   
-  .links h3 {
-    
+  .linksh3 {
+    font-family: Barlow Condensed;
     font-weight: normal;
     font-size: 23px;
     margin-bottom: 15px;
   }
   
-  .links li {
+  .linksli {
     font-family: Roboto;
     cursor: pointer;
-    padding: 15px 0;
-
+    padding: 15px0;
   }
   
-  .links li:hover {
+  .linksli:hover {
     color: #ffa801;
   }
-
