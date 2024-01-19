@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(247, 249, 250);
+    align-items: center;
+    position: sticky;
+    font-family: monospace;
+    font-size: x-large;
+    top: 0;
+  
+    opacity: 0.8;
+}
+
+.navbar .nav{
+    display: flex;
+    margin-left: 400px;
+    
+    
+
+}
+.nav .nav1{
+    margin: 12px;
+    padding: 12px;
+    list-style: none;
+    
+}
+.nav .nav1 a{
+    color: black;
+    text-decoration: none;
+
+}
+.nav .nav1 a:hover{
+    color: rgba(11, 10, 10, 0.993);
+    text-decoration: none;
+    background-color:white;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+.navbar .login a{
+
+    color: rgb(33, 33, 35);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+.navbar .login a:hover{
+
+    color: blue;
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+
+
+}
+.home{
+    background-image: url("https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/01/Indonesian-landscape-with-female-traveler.jpg");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.home .form{
+    width: 25%;
+    height: 50px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 250px 500px;
+   
+
+}
+.places{
+    
+   background:linear-gradient(45deg , rgb(157, 241, 163) 0% , rgb(242, 229, 201) 10%, rgb(200, 200, 106) 20%, rgb(245, 248, 245) 30%, rgb(241, 209, 209) 40%, rgb(203, 203, 223) 50%, rgb(183, 183, 231) 60% , rgb(225, 225, 189) 70%) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: rgb(232, 229, 165);
+    color: rgb(7, 6, 6);
+}
+.places-text{
+    
+    text-align: center;
+    justify-content: center;
+}
+.cards{
+    margin: 30px;
+    display: grid;
+    
+    grid-template-columns: repeat(4,250px);
+    grid-gap: 60px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+.card{
+    
+    box-shadow: 5px 5px 10px 0 rgba(10, 10, 8, 0.956);
+    border-radius: 15px;
+    width: 260px;
+    height: 400px;
+    background-color: rgb(223, 199, 140);
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.cards .card .zoom-img .img-card img{
+    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+    border-radius: 15px;
+    width: 260px;
+    height: 200px;
+}
+
+.cards .card .text .card-box a{
+    background-color: rgb(244, 210, 57);
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    border: black 3px solid;
+    border-radius: 15px;
+    padding: 5px 40px;
+    
+    
+   
+}
+.about{
+    background-color: rgb(231, 203, 166);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+}
+.about-img img {
+    width: 500px;
+    height: 700px;
+    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+    margin: 30px;
+  }
+.about .about-text {
+    margin: 20px;
+    
+}  
+.services{
+    display: flex;
+    background-color: rgb(228, 237, 245);
+}
+.services .service-item{
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    border: rgb(255, 251, 251) 2px solid;
+    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+}
+.services .service-item img{
+    box-shadow: 2px 2px 10px 0 rgba(10, 10, 8, 0.956);
+    width: 200px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+.contact header{
+    background:url("https://foodplazza113837442.files.wordpress.com/2022/11/contact-us-booking-flight-ticket-air-travel-vacations-concep-contact-us-booking-flight-ticket-air-travel-vacations-concept-104186601.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    padding-top: 100px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.contact .contact-box{
+    background-color: rgb(206, 192, 192);
+    display: flex;
+    
+    
+}
+
+.contact .contact-box .box{
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+}
+/*===============Footer===================*/
+.footer {
+    background-color: rgb(12, 9, 9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 36, 0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .footer .links {
+    position: relative;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links ul {
+    list-style-type: none;
+  }
+  
+  .links h3 {
+    
+    font-weight: normal;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  
+  .links li {
+    font-family: Roboto;
+    cursor: pointer;
+    padding: 15px 0;
+
+  }
+  
+  .links li:hover {
+    color: #ffa801;
+  }
+

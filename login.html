@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <style>
+        body{
+            background-image: url("https://th.bing.com/th/id/OIP.0hTRkgNszu0HuiJ6zD8DXAHaE7?rs=1&pid=ImgDetMain");
+            background-repeat:no-repeat;
+            background-size: cover;
+            width: 100%;
+            
+        }
+        body div{
+            
+            width: 250px;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 0 rgba(10, 10, 8, 0.956);
+            margin: auto;
+            margin-top: 50px;
+            padding: 40px;
+            color: rgb(14, 12, 12);
+            
+            
+
+        }
+        body h1{
+            text-shadow: 4px 4px #756363;
+        }
+        img{
+            height: 30px;
+            width: 30px;
+            margin: 4px;
+        }
+        #box #email-error{
+            position: absolute;
+            
+            color: red;
+            font-size: small;
+        }
+        #box #error-pswd{
+
+            position: absolute;
+            color: red;
+            font-size: small;
+        }
+        #box #submit-error{
+            color: red;
+            font-size: small;
+        }
+        #box #email{
+            border: 0;
+            border-radius: 10px;
+            padding: 6px;
+            box-shadow: 2px 2px 10px rgb(6, 3, 1);
+        }
+        #box #password{
+            border: 0;
+            border-radius: 10px;
+            padding: 6px;
+            box-shadow: 2px 2px 10px rgb(9, 5, 2);
+        }
+        #box #submit{
+            border: 0;
+            padding: 8px;
+            background-color: rgb(215, 145, 39);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgb(24, 14, 6);
+        }
+    </style>
+    
+</head>
+<body>
+    <h1 style="font-size: xx-large; margin-left:600px">LOGIN</h1>
+    <div id="box">
+    <form action="home.html" >
+        <label for="NAME">EMAIL:</label> <br> 
+        
+        <input type="email" id="email" placeholder="enter your email" name="email" onkeyup="cemail()" required >
+        <span id="email-error"></span>
+         <br><br>
+        <label for="PASSWORD">PASSWORD:</label> <br>
+        
+        <input type="password" name="password" id="password" placeholder="password" onkeyup="pswd()" minlength="8" required > 
+        <span id="error-pswd"></span>
+        <br><br>
+        <input type="checkbox" name="me" id="me" >
+        <label for="remenber">Remenber me?</label> <br><br>
+        
+        <button type="submit" value="login" id="submit" >Login</button> <br>
+        <span id="submit-error"></span> <br>
+        <small style="font-size: x-small;margin-left:100px">Forget Password?</small>
+        <hr>
+        <b style="margin-left: 100px;">or</b>
+        <br> 
+        
+        
+            <img src="https://th.bing.com/th/id/R.cda888975eb3a93283ba1608c5ea29d3?rik=LzSFAyKTykomLA&riu=http%3a%2f%2fgetdrawings.com%2fvectors%2flogo-facebook-vector-9.png&ehk=7%2fEp%2fTvrF4LcP1iNbDOPvVWeecwM9T%2fKwv7I9x1MrYU%3d&risl=&pid=ImgRaw&r=0">
+        
+       
+            <img src="https://th.bing.com/th/id/OIP.5RwXPrWqv58MznvrOo3_xAHaHw?rs=1&pid=ImgDetMain" >
+        
+            <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG7.png">
+       
+
+
+
+    </form>
+</div>
+
+<script>
+    var emailerror =document.getElementById('email-error');
+    var pswderror = document.getElementById('error-pswd');
+    var submiterror = document.getElementById('submit-error')
+    function cemail(){
+        var email = document.getElementById('email').value;
+        if(email.length == 0){
+            emailerror.innerHTML = 'please enter your email!!';
+            return false;
+            
+        }
+        
+        emailerror.innerHTML = '<i class="fa fa-check-square-o" aria-hidden="true" style="color:green;"></i>';
+        return true;
+    }
+    function pswd() {
+        var pswd = document.getElementById('password').value;
+        if (pswd.length == 0) {
+            pswderror.innerHTML = 'please enter your password!!';
+            return false;
+        }
+        pswderror.innerHTML = '<i class="fa fa-check-square-o" aria-hidden="true" style="color:green;"></i>';
+        return true;
+    }
+    
+    
+
+
+    
+</script>
+
+</body>
+</html>
